@@ -46,14 +46,6 @@ client.on('message', (message) => {
 });
 
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '대머리') {
-    message.reply('...');
-  }
-});
-
 
 client.on('message', (message) => {
   if(message.author.bot) return;
