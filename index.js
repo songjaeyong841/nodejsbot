@@ -121,19 +121,19 @@ client.on('message', (message) => {
   if(message.content == 'embed') {
     let img = 'https://cdn.discordapp.com/icons/419671192857739264/6dccc22df4cb0051b50548627f36c09b.webp?size=256';
     let embed = new Discord.RichEmbed()
-      .setTitle('타이틀')
+      .setTitle('세젤예 나은')
       .setURL('http://www.naver.com')
-      .setAuthor('나긋해', img, 'http://www.naver.com')
+      .setAuthor('세젤예 나은', img, 'http://www.naver.com')
       .setThumbnail(img)
       .addBlankField()
-      .addField('Inline field title', 'Some value here')
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here', true)
-      .addField('Inline field title', 'Some value here1\nSome value here2\nSome value here3\n')
+      .addField('이름', '세젤예 나은')
+      .addField('취미', '피아노치기, 게임', true)
+      .addField('나이', '어려', true)
+      .addField('핸드폰번호', '궁금해? 따보시던가', true)
+      .addField('특이사항', '귀여움\n착함\n잘생김\n')
       .addBlankField()
       .setTimestamp()
-      .setFooter('나긋해가 만듬', img)
+      .setFooter('나은이가 만듦', img)
 
     message.channel.send(embed)
   } else if(message.content == 'embed2') {
