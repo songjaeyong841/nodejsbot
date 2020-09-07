@@ -85,6 +85,13 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '제거') {
+    message.reply('누구를 제거할까요?');
+  }
+});
 
 client.on('ready', () => {
   console.log('켰다.');
