@@ -121,7 +121,7 @@ client.on('message', (message) => {
   if(message.content == '나은이 정보') {
     let img = 'https://cdn.discordapp.com/attachments/752419720766029864/752579451652538408/image0.png';
     let embed = new Discord.RichEmbed()
-      .setTitle('서젤예 나은')
+      .setTitle('세젤예 나은')
       .setURL('http://www.naver.com')
       .setAuthor('세젤예 나은', img, 'http://www.naver.com')
       .setThumbnail(img)
