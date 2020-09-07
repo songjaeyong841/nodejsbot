@@ -3,8 +3,8 @@ const client = new Discord.Client();
 const token = process.env.token;
 const welcomeChannelName = "입장";
 const byeChannelName = "퇴장";
-const welcomeChannelComment = "어서오세요.";
-const byeChannelComment = "안녕히가세요.";
+const welcomeChannelComment = "환영합니다!! DM내용 숙지 부탁드려요~";
+const byeChannelComment = "ㅃㅃ";
 
 client.on('ready', () => {
   console.log('켰다.');
@@ -104,7 +104,7 @@ client.on('message', (message) => {
 
 client.on('ready', () => {
   console.log('켰다.');
-  client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
+  client.user.setPresence({ game: { name: 'Made by 나은' }, status: 'online' })
 });
 
 client.on('guildMemberAdd', async member => {
