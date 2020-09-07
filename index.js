@@ -93,6 +93,15 @@ client.on('message', (message) => {
   }
 });
 
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '!제거 바코드') {
+    message.reply('확실한가요?');
+  }
+});
+
 client.on('ready', () => {
   console.log('켰다.');
   client.user.setPresence({ game: { name: '!help를 쳐보세요.' }, status: 'online' })
