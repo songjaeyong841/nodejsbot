@@ -72,6 +72,15 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === '나은이 번호') {
+    message.reply('알고싶어?');
+  }
+});
+
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === '!rank') {
     message.reply('봇 채널에서 사용해주세요.');
   }
