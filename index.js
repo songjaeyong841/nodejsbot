@@ -83,7 +83,7 @@ client.on('message', (message) => {
 
   if(message.content === 'ㄷㅂㅂㅂ') {
     message.reply('금지어 사용으로 뮤트합니다.');
-    member.addRole(guild.roles.find(role => role.name == "MUTED"));
+    member.addRole(role => role.name == "MUTED");
   }
 });
 client.on('message', (message) => {
