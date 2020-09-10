@@ -82,7 +82,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === 'ㄷㅂㅂㅂ') {
-    message.reply('금지어 사용으로 뮤트합니다.');
+    message.reply('금지어 사용으로 뮤트합니다.')
     member.addRole(role => role.name == "MUTED");
   }
 });
