@@ -81,6 +81,21 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === 'ㄷㅂㅂㅂ') {
+    message.reply('금지어 사용으로 뮤트합니다.');
+  }
+});
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '단비바보') {
+    message.reply('금지어 사용으로 뮤트합니다.');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === '!rank') {
     message.reply('봇 채널에서 사용해주세요.');
   }
