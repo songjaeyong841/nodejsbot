@@ -68,6 +68,13 @@ client.on('message', (message) => {
     message.reply('♥숭연');
   }
 });
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '안되') {
+    message.reply('-->안돼:eyes:');
+  }
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
