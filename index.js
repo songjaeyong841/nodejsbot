@@ -118,13 +118,7 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
 
-  if(message.content === '제거') {
-    message.reply('누구를 제거할까요?');
-  }
-});
 
 
 client.on('message', (message) => {
@@ -167,7 +161,7 @@ client.on('message', (message) => {
       .addBlankField()
       .setTimestamp()
       .setFooter('나은이가 작성함', img)
-
+ 
     message.channel.send(embed)
   } else if(message.content == '!help') {
     let helpImg = 'https://images-ext-1.discordapp.net/external/RyofVqSAVAi0H9-1yK6M8NGy2grU5TWZkLadG-rwqk0/https/i.imgur.com/EZRAPxR.png';
