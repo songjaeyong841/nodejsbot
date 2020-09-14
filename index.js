@@ -118,7 +118,13 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
 
+  if(message.content === '지누') {
+    message.reply(':hearts:나은'');
+  }
+});
 
 
 client.on('message', (message) => {
