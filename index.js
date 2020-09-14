@@ -84,13 +84,6 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '거짓말탐지기') {
-    message.reply('삐빅 거짓입니다.')
-  }
-});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
@@ -100,13 +93,6 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '단바비보') {
-    message.reply('금지어 사용으로 뮤트합니다.');
-  }
-});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
@@ -132,13 +118,7 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
 
-  if(message.content === '지누') {
-    message.reply(':hearts:나은'');
-  }
-});
 
 
 client.on('message', (message) => {
