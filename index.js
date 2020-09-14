@@ -93,6 +93,13 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '단바비보') {
+    message.reply('금지어 사용으로 뮤트합니다.');
+  }
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
