@@ -84,6 +84,13 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '거짓말탐지기') {
+    message.reply('삐빅 거짓입니다.')
+  }
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
