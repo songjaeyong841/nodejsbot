@@ -56,8 +56,16 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === '샤코') {
+    message.reply(':thumbsdown:');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === '숭연') {
-    message.reply('♥나은');
+    message.reply('♥샤코');
   }
 });
 
@@ -65,7 +73,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '나은') {
-    message.reply('♥숭연');
+    message.reply('♥지누');
   }
 });
 client.on('message', (message) => {
