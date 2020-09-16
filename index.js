@@ -56,16 +56,16 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content === '샤코') {
-    message.reply(':thumbsdown: ');
+  if(message.content === '나은이') {
+    message.reply('우울증 말기임. 건들지마');
   }
 });
 
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content === '숭연') {
-    message.reply('♥샤코');
+  if(message.content === '세젤예 나은') {
+    message.reply('우울증 말기임. 건들지마');
   }
 });
 
@@ -73,24 +73,19 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '나은') {
-    message.reply('♥지누');
+    message.reply('우울증 말기임. 건들지마');
   }
 });
+
 client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '안되') {
-    message.reply('-->안돼:eyes:');
+    message.reply('-->안돼:eyes: 좀 고쳐라');
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
 
-  if(message.content === '나은이 번호') {
-    message.reply('알고싶어?');
-  }
-});
 
 
 client.on('message', (message) => {
@@ -126,13 +121,6 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '지누') {
-    message.reply(':heart:나은');
-  }
-});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
@@ -147,14 +135,6 @@ client.on('message', (message) => {
 
   if(message.content === '!종료 에쁜사랑봇') {
     message.reply('잠시후 봇이 종료됩니다.');
-  }
-});
-
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '!제거 바코드') {
-    message.reply('확실한가요?');
   }
 });
 
