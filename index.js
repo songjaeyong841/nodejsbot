@@ -57,7 +57,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '샤코') {
-    message.reply(':thumbsdown:');
+    message.reply(':thumbsdown: ');
   }
 });
 
@@ -142,6 +142,13 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '!종료 에쁜사랑봇') {
+    message.reply('잠시후 봇이 종료됩니다.');
+  }
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
@@ -159,6 +166,8 @@ client.on('ready', () => {
 client.on('guildMemberAdd', async member => {
   member.send(`${member.displayName} 안녕하세요:wave: 예쁜사랑 클럽방 입니다. 닉네임을 롤닉네임 나이 성별 이렇게 설정해주세요. 저희 규칙을 간단하게 설명해드릴게요! 1번 저희를 롤을 중심으로 합니다! 2번 저희 디스코드 서버를 이용하실려면 롤 클럽은 필수로 들어오셔야 합니다! 3번 보이스 여부! 만약 보이스를 안쓰시면 역할중 보이스x 라는 역할도 드리니 맘 놓으세요! (단일 보이스를 쓸 경우 공지 읽으시고 보이스 확인이 있으니 알아두세요! 4번 오시게 된 경로! 디스보드or지인 소개 필수로 말해주세요 오시면 면접관/관리자/클럽장 세명중 한명을 태그하여 보이스 면접보러 왔습니다 해주시면 됩니다!`)
 })
+
+
 
 client.on('message', (message) => {
   if(message.author.bot) return;
