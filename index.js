@@ -138,7 +138,7 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content === '!종료 에쁜사랑봇') {
+  if(message.content === '!종료 예ㄴ쁜사랑봇') {
     message.reply('잠시후 봇이 종료됩니다.');
   }
 });
