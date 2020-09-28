@@ -87,7 +87,6 @@ client.on('message', (message) => {
 
 
 
-
 client.on('message', (message) => {
   if(message.author.bot) return;
 
@@ -105,13 +104,6 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '!rank') {
-    message.reply('봇 채널에서 사용해주세요.');
-  }
-});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
@@ -120,6 +112,7 @@ client.on('message', (message) => {
     message.reply(':eyes:');
   }
 });
+
 
 
 client.on('message', (message) => {
