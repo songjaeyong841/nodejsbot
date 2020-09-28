@@ -78,19 +78,12 @@ client.on('message', (message) => {
   }
 });
 
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '나은이') {
-    message.reply('우울증 말기임. 건들지마');
-  }
-});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content === '세젤예 나은') {
-    message.reply('우울증 말기임. 건들지마');
+  if(message.content === '해봄') {
+    message.reply('큐하형:hearts:');
   }
 });
 
