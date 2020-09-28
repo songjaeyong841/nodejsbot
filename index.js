@@ -56,6 +56,14 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === '싸울레?') {
+    message.reply('ㅋ');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === '사랑해') {
     message.reply('우웩:face_vomiting:');
   }
