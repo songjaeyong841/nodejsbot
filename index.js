@@ -56,6 +56,15 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === '꺼버린다') {
+    message.reply('죄송합니다 주인님^^');
+  }
+});
+
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === '싸울레?') {
     message.reply('ㅋ');
   }
