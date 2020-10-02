@@ -171,7 +171,7 @@ client.on('message', async message => {
     }
     const msg = message.content.split(prefix)[1]
     if(commands[msg] !== undefined) {
-      message.reply(commands[msg])
+      message.channel.send(commands[msg])
     }
 });
 
