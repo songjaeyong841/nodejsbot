@@ -83,7 +83,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '해봄') {
-    message.reply('귀요미');
+    message.channel.send('귀요미야!');
   }
 });
 
