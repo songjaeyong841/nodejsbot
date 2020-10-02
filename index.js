@@ -167,7 +167,7 @@ client.on('message', async message => {
       "안녕": "안녕하세요! :wave:",
       "잘가": "안녕히계세요..",
       "굴러": "(구르는 소리)",
-      "1": "안녕하세요! 간단한 면접 하려고 하는데 시간 괜찮으세요?"
+      "!안녕하세요": "안녕하세요! 간단한 면접 하려고 하는데 시간 괜찮으세요?"
     }
     const msg = message.content.split(prefix)[1]
     if(commands[msg] !== undefined) {
