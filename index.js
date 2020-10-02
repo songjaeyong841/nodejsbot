@@ -49,7 +49,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '야') {
-    message.reply('왜');
+    message.channel.send('왜');
   }
 });
 
