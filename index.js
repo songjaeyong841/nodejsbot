@@ -173,7 +173,7 @@ client.on('message', async message => {
     if(commands[msg] !== undefined) {
       message.reply(commands[msg])
     }
-})
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
