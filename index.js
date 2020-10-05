@@ -41,7 +41,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === 'ㅠ') {
-    message.reply('울지마요 ㅠㅠ 토닥토닥');
+    message.channel.send('울지마요 ㅠㅠ 토닥토닥');
   }
 });
 
