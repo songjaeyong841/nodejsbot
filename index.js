@@ -25,7 +25,7 @@ client.on("guildMemberRemove", (member) => {
   const deleteUser = member.user;
   const byeChannel = guild.channels.find(channel => channel.name == byeChannelName);
 
-  byeChannel.send(`${byeChannelComment}\n`);
+  byeChannel.send(`<@${deleteUser.id}> ${byeChannelComment}\n`);
 });
 
 client.on('message', (message) => {
@@ -278,7 +278,7 @@ client.on('message', (message) => {
       let contents = message.content.slice('!전체공지'.length);
       message.member.guild.members.array().forEach(x => {
         if(x.user.bot) return;
-        x.user.send(`<@${message.author.id}> ${contents}`);
+        x.user.send(`${contents}`);
       });
   
       return message.reply('공지를 전송했습니다.');
