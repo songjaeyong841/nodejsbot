@@ -98,34 +98,21 @@ client.on('message', (message) => {
 });
 
 
-
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === 'ㄷㅂㅂㅂ') {
-    message.reply('금지어 사용으로 뮤트합니다.')
-  }
-});
-
-
-client.on('message', (message) => {
-  if(message.author.bot) return;
-
-  if(message.content === '단비바보') {
-    message.reply('금지어 사용으로 뮤트합니다.');
-  }
-});
-
-
 client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '응애') {
-    message.reply(':eyes:');
+    message.channel.send(':eyes:');
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
 
+  if(message.content === '!종료 예쁜사랑봇') {
+    message.channel.send('잠시후 봇이 종료됩니다.');
+  }
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
@@ -138,8 +125,8 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
-  if(message.content === '!종료 예ㄴ쁜사랑봇') {
-    message.reply('잠시후 봇이 종료됩니다.');
+  if(message.content === 'On.AutoKick.System') {
+    message.channel.send('Turned on!');
   }
 });
 
