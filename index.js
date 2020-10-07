@@ -25,14 +25,14 @@ client.on("guildMemberRemove", (member) => {
   const deleteUser = member.user;
   const byeChannel = guild.channels.find(channel => channel.name == byeChannelName);
 
-  byeChannel.send(`<@${deleteUser.id}> ${byeChannelComment}\n`);
+  byeChannel.send(`${byeChannelComment}\n`);
 });
 
 client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '작동') {
-    message.reply(':game_die:작동중입니다:game_die:');
+    message.channel.send(':game_die:작동중입니다:game_die:');
   }
 });
 
@@ -160,7 +160,7 @@ client.on('guildMemberAdd', async member => {
 })
 
 let prefix = "!" // 접두사 바꿔도됨
-
+     
 client.on('message', async message => {
   if(!message.content.startsWith(prefix)) return
     const commands = {
