@@ -243,7 +243,7 @@ client.on('message', (message) => {
     if(message.member != null) { // 채널에서 공지 쓸 때
       let contents = message.content.slice('!전체공지2'.length);
       let embed = new Discord.RichEmbed()
-        .setAuthor('공지 of 예쁜사랑 BOT')
+        .setAuthor('예쁜사랑 서버')
         .setColor('#186de6')
         .setFooter(`예쁜사랑 BOT ❤️`)
         .setTimestamp()
