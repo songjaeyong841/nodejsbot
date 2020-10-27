@@ -33,7 +33,7 @@ client.on('message', (message) => {
 
   if(message.content === '작동') {
     message.channel.send(':game_die:작동중입니다:game_die:');
-  }
+  } 
 });
 
 
