@@ -10,15 +10,7 @@ client.on('ready', () => {
   console.log('켰다.');
 });
 
-client.on("guildMemberAdd", (member) => {
-  const guild = member.guild;
-  const newUser = member.user;
-  const welcomeChannel = guild.channels.find(channel => channel.name == welcomeChannelName);
 
-  welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
-
-  member.addRole(guild.roles.find(role => role.name == "신입"));
-});
 
 client.on("guildMemberRemove", (member) => {
   const guild = member.guild;
@@ -36,6 +28,15 @@ client.on('message', (message) => {
   } 
 });
 
+client.on("guildMemberAdd", (member) => {
+  const guild = member.guild;
+  const newUser = member.user;
+  const welcomeChannel = guild.channels.find(channel => channel.name == welcomeChannelName);
+
+  welcomeChannel.send(`<@${newUser.id}> ${welcomeChannelComment}\n`);
+
+  member.addRole(guild.roles.find(role => role.name == "신입"));
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
