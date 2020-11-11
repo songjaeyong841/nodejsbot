@@ -88,7 +88,13 @@ client.on('message', (message) => {
   }
 });
 
+client.on('message', (message) => {
+  if(message.author.bot) return;
 
+  if(message.content === '아린') {
+    message.channel.send('나은...');
+  }
+});
 
 client.on('message', (message) => {
   if(message.author.bot) return;
