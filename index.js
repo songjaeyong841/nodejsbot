@@ -92,7 +92,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === '아린') {
-    message.channel.send('나은...');
+    message.channel.send('나은이꺼야 건들지마');
   }
 });
 
