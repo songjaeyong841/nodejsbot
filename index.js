@@ -115,6 +115,14 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === 'a') {
+    message.reply('.시세');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === '!종료 예쁜사랑봇') {
     message.channel.send('잠시후 봇이 종료됩니다.');
   }
