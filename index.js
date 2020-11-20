@@ -116,7 +116,7 @@ client.on('message', (message) => {
   if(message.author.bot) return;
 
   if(message.content === 'a') {
-    message.reply('.시세');
+    message.channel.send('.시세');
   }
 });
 
