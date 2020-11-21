@@ -115,6 +115,22 @@ client.on('message', (message) => {
 client.on('message', (message) => {
   if(message.author.bot) return;
 
+  if(message.content === '영') {
+    message.channel.send('차');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
+  if(message.content === '차') {
+    message.channel.send('영');
+  }
+});
+
+client.on('message', (message) => {
+  if(message.author.bot) return;
+
   if(message.content === 'a') {
     message.channel.send('.시세');
   }
